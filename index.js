@@ -18,7 +18,7 @@ function addToCart(itemName) {
 };
 
 function viewCart() {
-  if (!cart.length) {
+  if (!item.length) {
     return `Your shopping cart is empty.`;
   }
 };
