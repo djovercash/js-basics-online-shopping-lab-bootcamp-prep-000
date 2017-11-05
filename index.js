@@ -10,6 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
+  var itemName = {};
   var itemPrice = Math.floor(Math.random() * 100 + 1);
   var item = new Object({ itemName: itemPrice});
   cart.push(item);
@@ -24,8 +25,13 @@ function viewCart() {
   var itemsAndPrice = [];
   for (var i = 0; i < cart.length; i++) {
     itemsAndPrice.push(`${itemName} at ${itemPrice}`);
-  }
-  return `In your cart, you have ${itemsAndPrice.join(", ")}`;
+  } if (i === 1) {
+    return `In your cart, you have ${itemsAndPrice}.`;
+  } else if (i === 2) {
+  return `In your cart, you have ${itemsAndPrice.join(" and ")}`;
+} else (i >= 3) {
+  return `In your cart, you have ${itemsAndPrice.join(", ")}`
+}
 };
 
 function total() {
