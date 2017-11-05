@@ -32,7 +32,7 @@ function viewCart() {
           preString+="."
         };
       };
-    } console.log(myString);
+    } console.log(preString);
   };
 
 function total() {
