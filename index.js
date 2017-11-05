@@ -20,8 +20,13 @@ function addToCart(item) {
 function viewCart() {
   if (!cart.length) {
     return `Your shopping cart is empty.`
+  };
+  var itemsAndPrice = [];
+  for (var i = 0; i < cart.length; i++) {
+    itemsAndPrice.push(`${itemName} at ${itemPrice}`);
   }
-}
+  return `In your cart, you have ${itemsAndPrice.join(", ")}`;
+};
 
 function total() {
   // write your code here
