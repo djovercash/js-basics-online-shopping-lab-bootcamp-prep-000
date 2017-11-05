@@ -27,7 +27,7 @@ function viewCart() {
       console.log(`In your cart, you have ${itemName} at ${itemPrice}`);
     } else if (cart.length === 2) {
       console.log(`In your cart, you have ${itemName} at ${itemPrice} and ${itemName} at ${itemPrice}`);
-    } else (cart.length >= 3) {
+    } else 
       console.log();
     };
   };
