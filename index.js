@@ -21,19 +21,21 @@ function viewCart() {
   if (!cart.length) {
     console.log(`Your shopping cart is empty.`);
   } else {
+    var cartCount = [];
     var string = `In your cart, you have `;
     for(var i = 0; i < cart.length; i++) {
-      for(var list in cart[i]) {
-        string += `${list} at $${cart[i][list]}`;
-        if (i!==cart.length-1) {
-          string+=", "
-        } else {
-          string+="."
-        };
+      cartCount.push(`${string} ${itemName} at ${itemPrice}`);
+      if (i === 1) {
+        console.log(`${cartCount}.`);
+      } else if (i === 2) {
+        console.log(`${cartCount} and ${cartCount + 1}.`);
       };
-    } console.log(string);
+    };
+    return viewCart;
   };
 };
+
+
 
 function total() {
   // write your code here
