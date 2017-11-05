@@ -21,17 +21,17 @@ function viewCart() {
   if (!cart.length) {
     console.log(`Your shopping cart is empty.`);
   } else {
-    var preString = `In your cart, you have `;
-    for(var i = 0, l = cart.length; i < l; i++) {
+    var string = `In your cart, you have `;
+    for(var i = 0, i < cart.length; i++) {
       for(var list in cart[i]) {
-        preString += `${list} at $${cart[i][list]}`;
+        string += `${list} at $${cart[i][list]}`;
         if (i!==cart.length-1) {
-          preString+=", "
+          string+=", "
         } else {
-          preString+="."
+          string+="."
         };
       };
-    } console.log(preString);
+    } console.log(string);
   };
 };
 
