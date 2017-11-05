@@ -21,6 +21,16 @@ function viewCart() {
   if (!cart.length) {
     console.log(`Your shopping cart is empty.`);
   }
+  var itemsAndPrice = [];
+  for (var i = 0; i < cart.length; i++) {
+    if (cart.length === 1) {
+      console.log(`In your cart, you have ${itemName} at ${itemPrice}`);
+    } else if (cart.length === 2) {
+      console.log(`In your cart, you have ${itemName} at ${itemPrice} and ${itemName} at ${itemPrice}`);
+    } else (cart.length >= 3) {
+      console.log();
+    };
+  };
 };
 
 function total() {
