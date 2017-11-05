@@ -33,6 +33,7 @@ function viewCart() {
       };
     } console.log(preString);
   };
+};
 
 function total() {
   // write your code here
