@@ -21,7 +21,6 @@ function viewCart() {
   if (!cart.length) {
     console.log(`Your shopping cart is empty.`);
   } else {
-    itemsAndPriceArr = [];
     var preString = `In your cart, you have `;
     for(var i = 0, l = cart.length; i < l; i++) {
       for(var list in cart[i]) {
