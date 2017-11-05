@@ -18,19 +18,7 @@ function addToCart(itemName) {
 };
 
 function viewCart() {
-  if (!cart.length) {
-    return `Your shopping cart is empty.`
-  };
-  var itemsAndPrice = [];
-  for (var i = 0; i < cart.length; i++) {
-    itemsAndPrice.push(`${itemName} at ${itemPrice}`);
-  } if (i === 1) {
-    return `In your cart, you have ${itemsAndPrice}.`;
-  } else if (i === 2) {
-  return `In your cart, you have ${itemsAndPrice.join(" and ")}`;
-} else (i >= 3) {
-  return `In your cart, you have ${itemsAndPrice.join(", ")}`
-}
+  
 };
 
 function total() {
