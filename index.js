@@ -23,7 +23,7 @@ function viewCart() {
   }
     var string = `In your cart, you have `;
     if (cart.length === 1) {
-      console.log(`${string} ${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`);
+      string += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`;
     } else if (cart.length === 2) {
       console.log(`${string} ${cart[0]} at ${cart[0]} and ${cart[1]} at $cart[1].`);
     } else {
